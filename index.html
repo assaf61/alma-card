@@ -146,7 +146,8 @@ footer{border-top:1px solid var(--border); padding:var(--sp-10) 0 var(--sp-20);}
 
 /* gallery */
 .gallery{display:grid; grid-template-columns:repeat(2,1fr); gap:var(--sp-3); margin:var(--sp-2) 0;}
-.gtile{aspect-ratio:4/3; background:var(--surface-2); border:1px dashed var(--border-s); border-radius:var(--r-m); display:grid; place-items:center; color:var(--txt-s); font-size:.72rem;}
+.gtile{aspect-ratio:4/3; background:var(--surface-2); border:1px solid var(--border); border-radius:var(--r-m); display:grid; place-items:center; color:var(--txt-s); font-size:.72rem; overflow:hidden;}
+.gtile img{width:100%; height:100%; object-fit:cover; display:block;}
 
 /* ===== NOTES (beta/working mode, ?notes) ===== */
 .note-ui{margin:var(--sp-2) 0 var(--sp-6);}
@@ -355,9 +356,10 @@ html.mode-page .wpanel-top{ position:sticky; top:0; z-index:2; }
     <h3>הפרויקטים</h3>
     <p>39 שנה של תכנון וניהול בנייה. תמ"א 38, שימור, תוספות אנכיות ומגורים, בעיקר בירושלים, בניהול צוותי יועצים גדולים מול רשויות ולוחות זמנים ארוכי-טווח.</p>
     <div class="gallery">
-      <div class="gtile">תמונת פרויקט</div><div class="gtile">תמונת פרויקט</div>
-      <div class="gtile">תמונת פרויקט</div><div class="gtile">תמונת פרויקט</div>
-      <div class="gtile">תמונת פרויקט</div><div class="gtile">תמונת פרויקט</div>
+      <div class="gtile"><img src="img/p1.jpg" alt="בניין מגורים מודרני באבן, ירושלים" loading="lazy"></div>
+      <div class="gtile"><img src="img/p2.jpg" alt="חזית שימור היסטורית בעבודה" loading="lazy"></div>
+      <div class="gtile"><img src="img/p3.jpg" alt="גג ומרפסת בפרויקט מגורים" loading="lazy"></div>
+      <div class="gtile"><img src="img/p4.jpg" alt="בניין מגורים גמור, ירושלים" loading="lazy"></div>
     </div>
     <p class="muted">לעיון מי שמבקש לראות יותר על הבנייה עצמה.</p>
     <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
