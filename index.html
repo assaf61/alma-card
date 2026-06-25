@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="theme-sky">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>אסף שליט · כרטיס ביקור</title>
+<meta name="description" content="אדריכל ומנהל פרויקטים, 39 שנה. נכנס ל-AI לפני שלושה חודשים. בנה מערכת אישית שעובדת כל יום וכמה יישומים חיים. מנצח מערכות AI, לא מהנדס תוכנה.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ===== NORDIC DESIGN SYSTEM v1.0 (tokens, embedded) ===== */
+:root{
+  --bg:#F7F6F4; --surface:#EDECEA; --surface-2:#E2E0DC; --border:#D4D1CC; --border-s:#B8B4AE;
+  --txt-s:#8A8680; --txt-m:#5A5754; --txt:#2A2826; --txt-x:#0F0F0E;
+  --acc:#C8A882; --acc-l:#EDE5D8; --acc-d:#A08660;
+  --sage:#8FA888; --sage-l:#DDE8DB; --sage-d:#4A7860;
+  --sky:#7BAEC4; --sky-l:#D8EAF2; --sky-d:#3A6880;
+  --ok:#6BA888; --ok-l:#D8F0E4; --ok-d:#3A7858;
+  --wrn:#D4A060; --wrn-l:#FBF0DC; --wrn-d:#8A6020;
+  --err:#C4705A; --err-l:#F8E4E0; --err-d:#8A3828;
+  --font-he:'Heebo',sans-serif;
+  --mark:url("data:image/png;base64,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");
+  --sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-6:24px;--sp-8:32px;--sp-10:40px;--sp-12:48px;--sp-16:64px;--sp-20:80px;--sp-24:96px;
+  --r-s:4px;--r-m:8px;--r-l:14px;--r-f:999px;
+  --sh-s:0 1px 4px rgba(0,0,0,.06);
+  --sh-m:0 4px 16px rgba(0,0,0,.08),0 1px 3px rgba(0,0,0,.04);
+  --sh-l:0 12px 40px rgba(0,0,0,.12),0 3px 8px rgba(0,0,0,.05);
+  --t-base:160ms ease; --t-slow:280ms ease;
+}
+html.theme-sky{ --acc:var(--sky); --acc-l:var(--sky-l); --acc-d:var(--sky-d); }
+*{box-sizing:border-box;}
+html{direction:rtl; scroll-behavior:smooth;}
+body{margin:0; font-family:var(--font-he); background:var(--bg); color:var(--txt); font-size:16px; line-height:1.7; -webkit-font-smoothing:antialiased;}
+body.panel-open{overflow:hidden;}
+.t-overline{font-size:.66rem; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:var(--txt-s);}
+.wrap{max-width:760px; margin:0 auto; padding:0 var(--sp-6);}
+
+/* ===== HYPERTEXT WORD ===== */
+.hx{ color:var(--sky-d); border-bottom:1.5px solid var(--sky); cursor:pointer; padding-bottom:1px; transition:background var(--t-base),border-color var(--t-base); border-radius:2px; }
+.hx:hover{ background:var(--sky-l); border-color:var(--sky-d); }
+.hero h1 .hx.hl3{ color:inherit; border-bottom:2px dotted var(--acc); cursor:pointer; padding-bottom:3px; }
+.hero h1 .hx.hl3:hover{ background:none; border-bottom-color:var(--acc-d); }
+.wpanel-body .quote-line{ text-align:center; font-size:1.18rem; color:var(--acc-d); line-height:1.7; margin:var(--sp-6) 0; }
+.wpanel-body .quote-line .muted{ display:inline-block; font-size:.82rem; margin-top:var(--sp-2); }
+.wpanel-body a.ext{ color:var(--sky-d); text-decoration:none; border-bottom:1px solid var(--sky); }
+.wpanel-body a.ext:hover{ background:var(--sky-l); }
+
+/* ===== TOPBAR ===== */
+.topbar{position:sticky; top:0; z-index:50; background:rgba(247,246,244,.9); backdrop-filter:saturate(140%) blur(10px); border-bottom:1px solid var(--border);}
+.topbar-in{display:flex; align-items:center; gap:var(--sp-3); padding:var(--sp-3) var(--sp-6); max-width:760px; margin:0 auto;}
+.brand-mark{display:inline-block; flex:none; width:22px; height:32px; background:var(--mark) center/contain no-repeat;}
+.brand-id{font-weight:600; color:var(--txt-x);}
+.brand-id .role{font-weight:400; color:var(--txt-m); font-size:.8rem; margin-inline-start:var(--sp-2);}
+
+/* ===== HERO ===== */
+.hero{padding:var(--sp-20) 0 var(--sp-10);}
+.hero .eyebrow{margin-bottom:var(--sp-6);}
+.hero h1{font-family:var(--font-he); font-weight:300; letter-spacing:-.03em; line-height:1.05; font-size:clamp(2.3rem,7vw,3.6rem); color:var(--txt-x); margin:0;}
+.hero h1 strong{font-weight:600;}
+.hero .sub{margin-top:var(--sp-6); font-size:clamp(1.02rem,2.3vw,1.22rem); color:var(--txt-m); font-weight:300; max-width:560px;}
+.hint{margin-top:var(--sp-6); font-size:.82rem; color:var(--txt-s); display:flex; align-items:center; gap:8px;}
+.hint .swatch{display:inline-block; width:34px; height:0; border-bottom:1.5px solid var(--sky); color:var(--sky-d);}
+
+/* ===== TLDR ===== */
+.tldr{margin-top:var(--sp-10); background:#fff; border:1px solid var(--border); border-top:3px solid var(--acc); border-radius:var(--r-l); padding:var(--sp-8); box-shadow:var(--sh-m);}
+.tldr .lab{margin-bottom:var(--sp-3);}
+.tldr p{margin:0; font-size:1.1rem; line-height:1.8; color:var(--txt);}
+
+/* ===== KPIS ===== */
+.kpis{display:grid; grid-template-columns:repeat(4,1fr); gap:var(--sp-3); margin-top:var(--sp-8);}
+.kpi{background:#fff; border:1px solid var(--border); border-top:2px solid var(--acc); border-radius:var(--r-l); padding:var(--sp-6) var(--sp-3); box-shadow:var(--sh-s); text-align:center;}
+.kpi .v{color:var(--txt-x); font-size:1.85rem; font-weight:300; letter-spacing:-.03em; line-height:1;}
+.kpi .l{font-size:.58rem; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:var(--txt-s); margin-top:var(--sp-2);}
+
+/* ===== BODY PROSE ===== */
+.brief{padding:var(--sp-16) 0 var(--sp-20);}
+.brief p{font-size:1.12rem; line-height:1.95; color:var(--txt); margin:0 0 var(--sp-8);}
+.brief p.lead{font-size:1.22rem; color:var(--txt-x); font-weight:300;}
+.chap{margin-bottom:var(--sp-12);}
+.chap:last-child{margin-bottom:0;}
+.chap-h{display:flex; align-items:center; gap:var(--sp-3); font-weight:600; font-size:1.18rem; color:var(--txt-x); margin:0 0 var(--sp-5);}
+.chap-h::before{content:""; width:20px; height:2px; background:var(--acc); flex:0 0 auto;}
+
+/* ===== FOOTER ===== */
+footer{border-top:1px solid var(--border); padding:var(--sp-10) 0 var(--sp-20);}
+.foot-in{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:var(--sp-4);}
+.foot-id{display:flex; align-items:center; gap:var(--sp-3);}
+.foot-id .who{font-weight:600; color:var(--txt-x);}
+.foot-id .role{font-size:.84rem; color:var(--txt-m);}
+.foot-c a{color:var(--sky-d); text-decoration:none; font-size:.9rem;}
+
+/* ===== WIKI PANEL ===== */
+.wscrim{position:fixed; inset:0; background:rgba(15,15,14,.28); opacity:0; visibility:hidden; transition:opacity var(--t-slow),visibility var(--t-slow); z-index:70;}
+.wscrim.show{opacity:1; visibility:visible;}
+.wpanel{position:fixed; top:0; bottom:0; left:0; width:min(470px,94vw); background:var(--bg); border-right:1px solid var(--border); box-shadow:var(--sh-l); transform:translateX(-102%); transition:transform var(--t-slow); z-index:80; display:flex; flex-direction:column;}
+.wpanel.open{transform:translateX(0);}
+.wpanel-top{display:flex; align-items:flex-start; gap:var(--sp-3); padding:var(--sp-4) var(--sp-6); border-bottom:1px solid var(--border); background:var(--surface);}
+.wcrumbs{flex:1; display:flex; flex-wrap:wrap; align-items:center; gap:6px; font-size:.78rem; min-height:24px;}
+.wcrumb{background:none; border:none; color:var(--sky-d); font-family:var(--font-he); font-size:.78rem; cursor:pointer; padding:2px 4px; border-radius:4px;}
+.wcrumb:hover{background:var(--sky-l);}
+.wcrumb:last-child{color:var(--txt-x); font-weight:600; pointer-events:none;}
+.wsep{color:var(--txt-s); font-size:.7rem;}
+.whome{background:var(--sky-l); border:none; color:var(--sky-d); font-family:var(--font-he); font-size:.78rem; cursor:pointer; padding:2px 10px; border-radius:var(--r-f); font-weight:500;}
+.whome:hover{background:var(--sky); color:#fff;}
+.wclose{flex:0 0 auto; background:none; border:1px solid var(--border-s); color:var(--txt-m); width:28px; height:28px; border-radius:var(--r-f); cursor:pointer; font-size:1.05rem; line-height:1; transition:all var(--t-base);}
+.wclose:hover{border-color:var(--acc); color:var(--txt-x);}
+.wpanel-body{flex:1; overflow-y:auto; padding:var(--sp-8) var(--sp-6) var(--sp-16);}
+.wpanel-body h3{font-size:1.45rem; font-weight:300; letter-spacing:-.02em; color:var(--txt-x); margin:0 0 var(--sp-4);}
+.wpanel-body h4{font-size:.95rem; font-weight:600; color:var(--txt-x); margin:var(--sp-8) 0 var(--sp-2);}
+.wpanel-body p{font-size:1.02rem; line-height:1.85; color:var(--txt); margin:0 0 var(--sp-4);}
+.wpanel-body ul{margin:0 0 var(--sp-4); padding-inline-start:var(--sp-6);}
+.wpanel-body li{margin-bottom:6px; line-height:1.65;}
+.wpanel-body .muted{color:var(--txt-m); font-size:.95rem;}
+
+/* related chips */
+.related{margin-top:var(--sp-8); padding-top:var(--sp-6); border-top:1px solid var(--border);}
+.related .rl{margin-bottom:var(--sp-3);}
+.chips{display:flex; flex-wrap:wrap; gap:var(--sp-2);}
+.chip{ background:var(--surface); border:1px solid var(--border); color:var(--sky-d); border-radius:var(--r-f); padding:5px 13px; font-size:.82rem; cursor:pointer; transition:all var(--t-base); }
+.chip:hover{ border-color:var(--sky); background:var(--sky-l); }
+
+/* parallel table */
+.maptbl{width:100%; border-collapse:collapse; margin:var(--sp-2) 0 var(--sp-4); font-size:.95rem;}
+.maptbl td{padding:9px 10px; border-bottom:1px solid var(--border); text-align:right;}
+.maptbl tr:last-child td{border-bottom:none;}
+.maptbl .arrow{color:var(--acc-d); width:28px; text-align:center;}
+
+/* two columns */
+.cols2{display:grid; grid-template-columns:1fr 1fr; gap:var(--sp-3); margin:var(--sp-3) 0;}
+.col-card{background:#fff; border:1px solid var(--border); border-radius:var(--r-m); padding:var(--sp-4);}
+.col-card .ch{font-size:.6rem; letter-spacing:.14em; text-transform:uppercase; font-weight:600; margin-bottom:var(--sp-3);}
+.col-card.me .ch{color:var(--sky-d);} .col-card.cl .ch{color:var(--txt-s);}
+.col-card ul{margin:0; padding-inline-start:var(--sp-5);} .col-card li{font-size:.92rem; margin-bottom:5px;}
+
+/* timeline */
+.tl{list-style:none; margin:var(--sp-2) 0 0; padding:0;}
+.tl li{position:relative; padding-inline-start:var(--sp-6); padding-bottom:var(--sp-6);}
+.tl li::before{content:""; position:absolute; inset-inline-start:5px; top:7px; width:8px; height:8px; border-radius:50%; background:var(--acc);}
+.tl li::after{content:""; position:absolute; inset-inline-start:8px; top:16px; bottom:-2px; width:1px; background:var(--border-s);}
+.tl li:last-child{padding-bottom:0;} .tl li:last-child::after{display:none;}
+.tl .when{font-weight:600; color:var(--txt-x);}
+
+/* gallery */
+.gallery{display:grid; grid-template-columns:repeat(2,1fr); gap:var(--sp-3); margin:var(--sp-2) 0;}
+.gtile{aspect-ratio:4/3; background:var(--surface-2); border:1px dashed var(--border-s); border-radius:var(--r-m); display:grid; place-items:center; color:var(--txt-s); font-size:.72rem;}
+
+/* ===== NOTES (beta/working mode, ?notes) ===== */
+.note-ui{margin:var(--sp-2) 0 var(--sp-6);}
+.note-ui.in-panel{margin-top:var(--sp-8); padding-top:var(--sp-6); border-top:1px dashed var(--border-s);}
+.note-ui.per-block{margin:2px 0 var(--sp-6);}
+.wpanel-body .note-toggle{font-size:.68rem; padding:3px 11px;}
+.note-toggle{background:var(--sky-l); border:1px solid var(--sky); color:var(--sky-d); font-family:var(--font-he); font-size:.72rem; font-weight:600; padding:4px 13px; border-radius:var(--r-f); cursor:pointer;}
+.note-toggle.has{background:var(--sky); color:#fff;}
+.note-box{display:none; margin-top:var(--sp-2); background:var(--surface); border:1px solid var(--border); border-radius:var(--r-m); padding:var(--sp-3);}
+.note-box.open{display:block;}
+.note-box textarea{width:100%; min-height:64px; max-height:60vh; overflow-y:auto; border:1px solid var(--border); border-radius:var(--r-s); padding:8px; font-family:var(--font-he); font-size:.95rem; line-height:1.6; resize:vertical; background:var(--bg); color:var(--txt);}
+.note-row{display:flex; gap:8px; margin-top:6px; align-items:center;}
+.note-mic{background:#fff; border:1px solid var(--border-s); border-radius:var(--r-f); width:30px; height:30px; cursor:pointer; font-size:.95rem; line-height:1;}
+.note-mic.rec{background:var(--err-l); border-color:var(--err);}
+.note-hint{font-size:.7rem; color:var(--txt-s);}
+.notes-fab{position:fixed; bottom:64px; inset-inline-start:18px; z-index:90; background:var(--txt-x); color:var(--bg); border:none; border-radius:var(--r-f); padding:10px 18px; font-family:var(--font-he); font-weight:600; font-size:.85rem; cursor:pointer; box-shadow:var(--sh-m);}
+.send-fab{position:fixed; bottom:18px; inset-inline-start:18px; z-index:91; background:var(--sky-d); color:#fff; border:none; border-radius:var(--r-f); padding:11px 20px; font-family:var(--font-he); font-weight:700; font-size:.9rem; cursor:pointer; box-shadow:var(--sh-l);}
+.notes-drawer{position:fixed; inset:0; background:rgba(15,15,14,.4); z-index:95; display:none;}
+.notes-drawer.open{display:block;}
+.notes-sheet{position:absolute; inset-block:0; inset-inline-start:0; width:min(540px,96vw); background:var(--bg); padding:var(--sp-6); overflow-y:auto; box-shadow:var(--sh-l);}
+.ns-top{display:flex; align-items:center; justify-content:space-between; margin-bottom:var(--sp-4);}
+.ns-top h3{font-weight:300; font-size:1.5rem; color:var(--txt-x); margin:0;}
+.ns-item{background:#fff; border:1px solid var(--border); border-radius:var(--r-m); padding:var(--sp-3) var(--sp-4); margin-bottom:var(--sp-3);}
+.ns-t{font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; color:var(--sky-d); font-weight:600; margin-bottom:4px;}
+.ns-x{white-space:pre-wrap; line-height:1.6;}
+.ns-actions{display:flex; gap:var(--sp-3); margin-top:var(--sp-4);}
+.alma-cta{background:var(--txt-x); color:var(--bg); padding:9px 20px; border-radius:var(--r-s); border:none; font-family:var(--font-he); font-weight:500; cursor:pointer;}
+.ns-clear{background:none; border:1px solid var(--border-s); color:var(--txt-m); padding:9px 16px; border-radius:var(--r-s); font-family:var(--font-he); cursor:pointer;}
+
+@media (max-width:680px){
+  .kpis{grid-template-columns:repeat(2,1fr);}
+  .cols2{grid-template-columns:1fr;}
+  .hero{padding:var(--sp-12) 0 var(--sp-8);}
+  .wpanel{top:auto; bottom:0; left:0; right:0; width:auto; height:min(84vh,640px); transform:translateY(102%); border-right:none; border-top:1px solid var(--border); border-radius:var(--r-l) var(--r-l) 0 0;}
+  .wpanel.open{transform:translateY(0);}
+}
+
+/* ===== PAGE MODE (?page): צלילה מחליפה את כל העמוד במקום פאנל צד ===== */
+html.mode-page .wpanel{ width:100%; max-width:100%; left:0; right:0; border-right:none; box-shadow:none; }
+html.mode-page .wscrim{ display:none; }
+html.mode-page .wpanel-top{ position:sticky; top:0; z-index:2; }
+@media (max-width:680px){
+  html.mode-page .wpanel{ top:0; height:100%; border-radius:0; border-top:none; }
+}
+
+/* dark mode */
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#1A1917; --surface:#242220; --surface-2:#2E2C29; --border:#39362F; --border-s:#4A4640; --txt-s:#8F8A82; --txt-m:#B5AFA6; --txt:#E4E0D8; --txt-x:#F7F5F0; --sky-l:#1E3340; }
+  html.theme-sky{ --acc:var(--sky); }
+  .hx{ color:#A9CFE0; border-color:var(--sky); }
+  .hx:hover{ background:#1E3340; }
+  .tldr,.kpi,.col-card,.ns-item,.note-mic{background:var(--surface);}
+  .topbar{background:rgba(26,25,23,.9);}
+  .wcrumb,.chip,.note-toggle{color:#A9CFE0;}
+  .brand-mark{filter:invert(1) brightness(1.6);}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <span class="brand-mark" role="img" aria-label="עלמא"></span>
+    <span class="brand-id">עלמא ניהול פרויקטים</span>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="t-overline eyebrow">כרטיס ביקור &middot; יוני 2026</p>
+    <h1 class="annot" data-k="title" data-title="כותרת"><span class="hx hl3" data-node="three">פרויקט הוא פרויקט הוא פרויקט</span></h1>
+    <p class="sub annot" data-k="sub" data-title="תת-כותרת"><span class="hx" data-node="story">הצורך</span> <span class="hx" data-node="machine">להמציא מחדש</span></p>
+    <p class="hint"><span class="swatch"></span> מילים בכחול נפתחות לעומק. אפשר לצלול, ולחזור.</p>
+
+    <div class="tldr annot" data-k="concl" data-title="אם תקראו רק את זה">
+      <p class="t-overline lab">אם תקראו רק את זה</p>
+      <p>מחשבה עובדת בכיוונים רבים בו-זמנית, וזו ה"סערה". במקום להתנגש וליישר אותה, <span class="hx" data-node="machine">המכונה</span> מתחברת ומנהלת אותה, מוציאה ממנה סדר: נשאל פעם אחת! וחוזר מחובר, למידה הדדית, ספירלה שעולה בכל סבב. נבנתה על <span class="hx" data-node="edge">עשרות שנות תכנון וניהול פרויקטים</span>, אותה דרך, החומר שונה.</p>
+    </div>
+
+    <div class="kpis">
+      <div class="kpi"><div class="v">39</div><div class="l">שנות פרויקטים</div></div>
+      <div class="kpi"><div class="v">3</div><div class="l">חודשים ב-AI</div></div>
+      <div class="kpi"><div class="v">3</div><div class="l">דרגות חשיפה</div></div>
+      <div class="kpi"><div class="v">5+</div><div class="l">יישומים חיים</div></div>
+    </div>
+  </div>
+</header>
+
+<main class="brief">
+  <div class="wrap">
+
+    <section class="chap annot" data-k="ch-what" data-title="מה זה">
+      <h2 class="chap-h">מה זה</h2>
+      <p class="lead">מחשבות, דרכן לנוע בכיוונים רבים בו-זמנית: רעיונות, עבודה, פרטי וציבורי, זאת בחשיפה משתנה, שלעיתים אף אינה משיקה, כולם מסתחררים במקביל. זו ה"סערה".</p>
+      <p>בראשית היה הצורך לחקור נושאים שמושכים את הדעת, והאילוץ שלא אִפשר לעשות זאת. מהאילוץ נולדה מכונה שמתאימה את עצמה למשתמש אדם <span class="hx" data-node="scale">או חברה</span>: לדרך החשיבה, בממשקי משתמש פשוטים, שאף הם משתנים ומתאימים עצמם לשימוש, לסטטיסטיקה, ולמשתמש, בהתאם להתקדמות וזיהוי הצרכים.</p>
+      <p>תפקיד המכונה אינו להרגיע ולישר את הסערה, אלא לנהל ולהוציא סדר, יעילות ותוצרים.</p>
+      <p>ואיך היא עובדת: כל שנשאל פעם אחת, נלמד ואף פעם לא שוב. מחשבה שנזרקת בקול חוזרת מחוברת, עם הצעת מקום קישור ופתרון; היה וטעתה באפיון, מתקנים בלחיצה והיא <span class="hx" data-node="learning">לומדת</span>. לא לולאה שחוזרת לאותה נקודה, ספירלה שעולה בכל סבב. <span class="hx" data-node="edge">מערכת AI היא פרויקט כמו בניין</span>: אותה דרך, החומר שונה.</p>
+    </section>
+
+    <section class="chap annot" data-k="ch-machine" data-title="מה היא עושה">
+      <h2 class="chap-h">מה היא עושה</h2>
+      <p class="lead">לא רעיון אלא מערכת חיה. אפשר למנות לפחות חמישה <span class="hx" data-node="machine">יישומים</span> שכבר רצים: בית עלמא (בריף יומי, לכידה והפצת חוטים), מעקב לחץ דם, לוח שאלות ותשובות, קבלה ומיון קצות חוט, וכלי שממיין, ממספר ומתייג פריטים מתוך צילום. ו<span class="hx" data-node="more-apps">עוד</span>.</p>
+      <p>מתחת ליישומים רצה תשתית רחבה, הכוללת בשלב זה: <span class="hx" data-node="bait-alma">בית עלמא</span> כחזית, <span class="hx" data-node="vaults">3 דרגות חשיפה</span> לידע, <span class="hx" data-node="loops">לולאות</span> לכידה-מיון-החלטה, <span class="hx" data-node="skills">סקילים</span>, חיבורי חוץ, בנייה ושיגור עצמאיים של סוכנים, סקילים וחיבורים.</p>
+      <p>מתחת לרכיבים, המערכת <span class="hx" data-node="pillars">עומדת על חמישה עמודים</span>: צבירת ידע, ניהולו, עבודה של סוכן, למידה מהעבודה, ועצמאות הנתונים מול כל כלי. כל עמוד קיים בפני עצמו, חיבורם לכדי תלכיד מייצר יסוד חזק, תומך וגמיש.</p>
+      <p>ומעל הכל: <span class="hx" data-node="learning">המכונה לומדת את עצמה ואת השותף</span>. לא במובן שהמודל מתאמן, אלא שהמערכת זוכרת, משתקפת ומקבעת שיטה. לא רק רצה, משתפרת.</p>
+    </section>
+
+    <section class="chap annot" data-k="ch-boundary" data-title="הגבול">
+      <h2 class="chap-h">הגבול</h2>
+      <p>הגבול ברור: <span class="hx" data-node="boundary">מה בתחום הנהג ומה בתחום קלוד, המכונית</span>. היכולת בעמודה, המטאפורה בעומק: מי שיודע לנהל פרויקט מורכב מצא חוף מבטחים בכלי שמבצע. <span class="hx" data-node="orchestrator">מנצח</span>, לא מהנדס תוכנה.</p>
+    </section>
+
+    <section class="chap annot" data-k="ch-me" data-title="איך המכונה נולדה">
+      <h2 class="chap-h">איך המכונה נולדה</h2>
+      <p>המכונה לא תוכננה מראש. היא נולדה מצורך אישי, לחקור הרבה בו-זמנית, ומאילוץ שלא ניתן לעשות זאת בכלים הקיימים או בחיבור זה או אחר; מכאן מתבקשת הובלה, יציבות וכיוון. המכונה נולדה תוך כדי עבודה, בחודשים האחרונים.</p>
+      <p>מי מאחוריה: רקע עמוק בבנייה ובניהול מערכות, בראש צוותי יועצים גדולים, ש<span class="hx" data-node="slope">לפני שלושה חודשים נדבק ב-AI</span>. מה אני מביא איתי: 39 שנה של תכנון, ניהול וביצוע מערכות מורכבות מקצה לקצה, וראייה שמחברת תחומים רחוקים זה מזה.</p>
+      <p class="muted"><span class="hx" data-node="story">הסיפור המלא, איך זה התחיל והתגלגל</span>.</p>
+    </section>
+
+    <section class="chap annot" data-k="ch-ask" data-title="הבקשה">
+      <h2 class="chap-h">הבקשה</h2>
+      <p>מה מבוקש כאן: לא כסף, לא ג'וב. <span class="hx" data-node="ask">עזרה</span>: הכוונה, ייעוץ, חוות דעת מקצועית, עין בוחנת, איך לגשת לאתגר, מה הנתיב לקידום והאם כדאי, או כל רעיון שמתאים.</p>
+      <p>דלת פתוחה: חיבורים, חונכות, השתתפות הדדית, המלצה, כל פורמט שמתאים. ואם הרעיון מחזיק, ההמשך בא איתו.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <div class="foot-id">
+      <span class="brand-mark" role="img" aria-label="עלמא"></span>
+      <div class="who">עלמא ניהול פרויקטים</div>
+    </div>
+    <div class="foot-c"><span class="hx" data-node="contact">צור קשר</span></div>
+  </div>
+</footer>
+
+<!-- ===== WIKI PANEL ===== -->
+<div class="wscrim" id="wscrim"></div>
+<aside class="wpanel" id="wpanel" aria-hidden="true" aria-label="עומק">
+  <div class="wpanel-top">
+    <nav class="wcrumbs" id="wcrumbs"></nav>
+    <button class="wclose" id="wclose" aria-label="סגור">&times;</button>
+  </div>
+  <div class="wpanel-body" id="wbody"></div>
+</aside>
+
+<!-- ===== NOTES (beta/working mode) ===== -->
+<button class="notes-fab" id="notesFab" style="display:none">הערות</button>
+<div class="notes-drawer" id="notesDrawer"><div class="notes-sheet" id="notesSheet"></div></div>
+
+<!-- ===== HIDDEN WIKI NODES (also readable in HTML source) ===== -->
+<div id="wnodes" hidden>
+
+  <article id="n-three" data-title="פרויקט הוא פרויקט">
+    <h3>פרויקט הוא פרויקט הוא פרויקט</h3>
+    <p>הצורה הזאת נשענת על אחת השורות המצוטטות ביותר בשירה המודרנית, של גרטרוד שטיין, מתוך "Sacred Emily" (1913):</p>
+    <p class="quote-line">ורד הוא ורד הוא ורד הוא ורד.<br><span class="muted">&bdquo;Rose is a rose is a rose is a rose&ldquo; &middot; גרטרוד שטיין</span></p>
+    <p>שטיין טענה שעצם החזרה על השם מחזירה לדבר את מהותו: ורד הוא ורד, לא דימוי ולא תיאור. הקריאה בשמו מעוררת את כל מה שהוא.</p>
+    <p>אותו דבר כאן. בין אם החומר הוא בטון או בינה מלאכותית, פרויקט הוא פרויקט. השם משתנה, הדרך לא: תכנון, לולאות, איסוף, מסירה.</p>
+    <p class="muted">החוצה אל העולם: <a class="ext" href="https://en.wikipedia.org/wiki/Rose_is_a_rose_is_a_rose_is_a_rose" target="_blank" rel="noopener">המקור והמשמעות</a> &middot; <a class="ext" href="https://writing.upenn.edu/pennsound/x/Stein.php" target="_blank" rel="noopener">קולה של שטיין, 1935</a></p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="edge">אותה דרך</span>
+      <span class="chip hx" data-node="machine">המכונה</span>
+    </div></div>
+  </article>
+
+  <article id="n-edge" data-title="אותה דרך">
+    <h3>אותה דרך</h3>
+    <p>אותם מהלכים: קישורים ומחברים, לולאות רצות, סוכנים וספקים, סיעור מוחות ממומחיות שונות, הבחנה בין העיקר לתפל, וניווט לחוף מבטחים בקשת רחבה של מקרים ותגובות. מערכים גמישים הניתנים לניהול במסגרות קשיחות: יכולות פעולה ותגובה מובנות, פרוטוקולים, ו<span class="hx" data-node="more">עוד</span>.</p>
+    <table class="maptbl"><tbody>
+      <tr><td>תכנון ואדריכלות</td><td class="arrow">&larr;</td><td><span class="hx" data-node="orchestrator">ארכיטקטורת המערכת</span></td></tr>
+      <tr><td>ניהול צוות יועצים, קבלנים ובעלי מקצוע במקביל</td><td class="arrow">&larr;</td><td><span class="hx" data-node="skills">סוכנים, סקילים, כלים</span>, API וחיבורים (NotebookLM, Smartsheet, Office, Google) כזרועות עבודה</td></tr>
+      <tr><td>לוח זמנים ותיאום</td><td class="arrow">&larr;</td><td><span class="hx" data-node="loops">לולאות אוטומטיות</span></td></tr>
+      <tr><td>תיקייה ומסמכים</td><td class="arrow">&larr;</td><td><span class="hx" data-node="vaults">דרגות חשיפה</span></td></tr>
+      <tr><td>מסירה ואכלוס</td><td class="arrow">&larr;</td><td>פרסום ושימוש יומיומי</td></tr>
+    </tbody></table>
+    <p class="muted">ההשלכה: מי שיודע לנהל פרויקט מקצה-לקצה מחזיק את הכישור המרכזי. הקוד הוא חומר; הניהול הוא העבודה.</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="machine">המכונה</span>
+      <span class="chip hx" data-node="buildings">הפרויקטים</span>
+      <span class="chip hx" data-node="orchestrator">מנצח</span>
+    </div></div>
+  </article>
+
+  <article id="n-more" data-title="ועוד, מאותו סוג">
+    <h3>ועוד, מאותו סוג</h3>
+    <p>הרשימה נמשכת. כל פריט כאן הוא מנגנון שכבר עובד, וכל אחד ראוי לצלילה משלו. כאן הם מסומנים, לא מוצפים.</p>
+    <ul>
+      <li>סוכנים ייעודיים: חילוץ מידע ממסמך לפי כלל, ועיבוד עד הסוף.</li>
+      <li>ניהול צוות ביעילות: הקצאה, תיאום, מסירה.</li>
+      <li>ניהול הזרימה מקצה-לקצה: לכידה &larr; מיון &larr; החלטה &larr; ביצוע &larr; דיווח.</li>
+      <li>היכן עובר הגבול לכל פעולה: מה רץ לבד, מה דורש אישור.</li>
+      <li>שיטת עבודה נקודה-נקודה מול קלוד, שמשתפרת תוך כדי.</li>
+    </ul>
+    <p class="muted">כל שורה כאן היא ראש-חוט לצומת עתידי. המערכת לא גדלה עכשיו, רק מסומנת.</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="edge">אותה דרך</span>
+      <span class="chip hx" data-node="machine">המכונה</span>
+      <span class="chip hx" data-node="skills">סקילים</span>
+    </div></div>
+  </article>
+
+  <article id="n-buildings" data-title="הפרויקטים">
+    <h3>הפרויקטים</h3>
+    <p>39 שנה של תכנון וניהול בנייה. תמ"א 38, שימור, תוספות אנכיות ומגורים, בעיקר בירושלים, בניהול צוותי יועצים גדולים מול רשויות ולוחות זמנים ארוכי-טווח.</p>
+    <div class="gallery">
+      <div class="gtile">תמונת פרויקט</div><div class="gtile">תמונת פרויקט</div>
+      <div class="gtile">תמונת פרויקט</div><div class="gtile">תמונת פרויקט</div>
+      <div class="gtile">תמונת פרויקט</div><div class="gtile">תמונת פרויקט</div>
+    </div>
+    <p class="muted">לעיון מי שמבקש לראות יותר על הבנייה עצמה.</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="edge">מערכת = פרויקט</span>
+      <span class="chip hx" data-node="rare-combo">הצירוף</span>
+    </div></div>
+  </article>
+
+  <article id="n-machine" data-title="המכונה">
+    <h3>המכונה</h3>
+    <p>מערכת אישית שרצה כל יום. חזית: <span class="hx" data-node="bait-alma">בית עלמא</span>. ידע: <span class="hx" data-node="vaults">3 דרגות חשיפה</span> מקושרים. אוטומציה: <span class="hx" data-node="loops">לולאות</span>, <span class="hx" data-node="skills">סקילים</span>, <span class="hx" data-node="telemetry">תיעוד-עצמי</span> וגיבוי הפיך.</p>
+    <p>מתחת לכל אלה: פרוטוקולים ומדדי KPI, אבטחה וניתוב מידע, למידה עצמית, פיתוח וגדילה. עשרות חיבורים לעולם החיצון, MCP, קונקטורים ופלאגינים, קישורים ל-GitHub וכלי החוץ, לצד החיבור הפנימי, הכל בו-זמנית.</p>
+    <p class="muted">בנוסף: חיבור גמיש למקורות מחקר ומידע, ולסוכני איסוף ותצפית פנימיים וחיצוניים, מאורגנים ואמינים, תוך שימוש ב-NotebookLM ונוספים, נגישים לפי שיקול המכונה ובכפיפות לפרוטוקולים לקריאת מידע ולהרצת שאילתות.</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="bait-alma">בית עלמא</span>
+      <span class="chip hx" data-node="vaults">דרגות חשיפה</span>
+      <span class="chip hx" data-node="loops">לולאות</span>
+      <span class="chip hx" data-node="harvest">קציר</span>
+      <span class="chip hx" data-node="learning">המכונה לומדת</span>
+      <span class="chip hx" data-node="safety">בטיחות כמאיץ</span>
+      <span class="chip hx" data-node="pillars">על מה זה עומד</span>
+    </div></div>
+  </article>
+
+  <article id="n-bait-alma" data-title="בית עלמא">
+    <h3>בית עלמא</h3>
+    <p>יישום אחד שמאחד ארבע רגליים שעובדות יחד:</p>
+    <ul>
+      <li>בריף בוקר אוטומטי בעל גידור ותכולה גמישים</li>
+      <li>מפיץ חוטים: לכידה &larr; תמלול &larr; מיון והשבחה אוטומטי</li>
+      <li>לוח שאלות פתוחות</li>
+      <li>נתיב פעולות ומשימות</li>
+    </ul>
+    <p>רצה על הטלפון, מתעדכנת לבד, לולאת לכידה-מיון-החלטה סוגרת מעגל באופן שותף (בחיסכון עלויות זמן וכסף).</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="loops">לולאות</span>
+      <span class="chip hx" data-node="machine">המכונה</span>
+    </div></div>
+  </article>
+
+  <article id="n-vaults" data-title="דרגות החשיפה">
+    <h3>שלוש דרגות חשיפה</h3>
+    <p>הידע מאורגן לפי חשיפה, לא לפי נושא: מי יכול לראות, לגשת, לעבוד.</p>
+    <ul>
+      <li>ציבורי: מה שמיועד לתקשר החוצה.</li>
+      <li>פרטי: אזור עבודת עומק, מחקר, נתונים וקניין רוחני, המחובר ומעביר מידע לציבורי על בסיס שיקוף-יציאה בלבד. נגיש לבעלים ולמכונה בלבד.</li>
+      <li>חתום: לעולם לא יוצא. אין ייצוא אוטומטי, אין קישור חוצה-אזור.</li>
+    </ul>
+    <p>בתוך כל אזור יושב מבנה נושאי מלא. שיתוף נעשה נקודה-לנקודה, לעולם לא במתן גישה לאזור. הגבול קדוש.</p>
+    <p>כמו בבניין: שטחים ציבוריים, מסחר, משרדים, פרטי, עיקרי, שירות וחדר-כספות נעול. אותו היגיון של תכנון-אזורים לפי מי-נכנס-לאן, מיושם על ידע.</p>
+    <p class="muted">ההתכנסות לשלושה: הציר הנכון התברר כחשיפה, לא נושא. השיטה שמזינה: <span class="hx" data-node="harvest">קציר</span>.</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="harvest">קציר</span>
+      <span class="chip hx" data-node="machine">המכונה</span>
+      <span class="chip hx" data-node="edge">מערכת = פרויקט</span>
+    </div></div>
+  </article>
+
+  <article id="n-loops" data-title="לולאות">
+    <h3>זרימות, לא שיחה</h3>
+    <p>AI אישי כמערכת-הפעלה: זרימות שרצות תמיד: לכידה &larr; מיון &larr; החלטה &larr; ביצוע &larr; דיווח. לא שיחה חד-פעמית, תהליך מתמשך מצטלב מתמזג וצומח.</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="bait-alma">בית עלמא</span>
+      <span class="chip hx" data-node="machine">המכונה</span>
+    </div></div>
+  </article>
+
+  <article id="n-skills" data-title="סקילים">
+    <h3>סקילים</h3>
+    <p>אוטומציות עבודה מותאמות: מותג, מסמכים בעברית, השוואת הצעות, מסירת פרויקט. כל סקיל מקבע דרך-עבודה חוזרת, כך שהיא ניתנת לשחזור בלי לחשוב עליה מחדש.</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="machine">המכונה</span>
+      <span class="chip hx" data-node="edge">מערכת = פרויקט</span>
+    </div></div>
+  </article>
+
+  <article id="n-telemetry" data-title="תיעוד-עצמי">
+    <h3>תיעוד-עצמי</h3>
+    <p>המערכת מתעדת את עצמה: יומן פעולות, מה רץ, מה נכשל, מה לשפר. לצד גיבוי בשלוש שכבות: כל פעולה הפיכה.</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="safety">בטיחות כמאיץ</span>
+      <span class="chip hx" data-node="machine">המכונה</span>
+    </div></div>
+  </article>
+
+  <article id="n-learning" data-title="המכונה לומדת">
+    <h3>המכונה לומדת את עצמה</h3>
+    <p>זו לא תוספת, זה עיקרון יסוד בעבודת המערכת: המכונה לא רק מבצעת, היא משתפרת בעבודה עצמה. כל סבב מלמד את הסבב הבא.</p>
+    <p>הלולאה: <span class="hx" data-node="telemetry">תיעוד-עצמי</span> של מה רץ ומה נכשל &larr; השתקפות שבועית על דרך-העבודה &larr; ליטוש השיטה, גם דרך-העבודה מול קלוד משתפרת תוך כדי &larr; <span class="hx" data-node="skills">סקילים</span> חדשים &larr; וחזרה.</p>
+    <p>בתוך הלולאה נבנים מאליהם המנגנונים שרצים כאן כל הזמן: סקילים, סוכנים, לולאות, תזמונים והפרוטוקולים סביבם. סוכן מיטוב, סוכן שבודק התייעלות, סוכן שעוקב כדי שאפשר יהיה לחזור אחורה. חלקם כבר רצים, חלקם רעיונות בעלי היתכנות שעוד לא קודדו. כתיבת הקוד היא השלב הבא, והמטרה שכולם יעבדו.</p>
+    <p class="muted">הכיוון: ככל שעובר הזמן, פחות בנייה מאפס, יותר שכלול של מה שכבר עובד. לזרוק יסוד קיים ולהתחיל מחדש דורש תיאום רב; אם נבנה בשום שכל, הפגמים מתגלים ומשתפרים, לא נמחקים. כל הזמן עובדים על יסודות מוצקים וגמישים, שמאפשרים תנועה חופשית לכל כיוון בתוך מסגרת של מגבלות מובנות.</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="telemetry">תיעוד-עצמי</span>
+      <span class="chip hx" data-node="skills">סקילים</span>
+      <span class="chip hx" data-node="safety">בטיחות כמאיץ</span>
+      <span class="chip hx" data-node="machine">המכונה</span>
+    </div></div>
+  </article>
+
+  <article id="n-pillars" data-title="על מה זה עומד">
+    <h3>על מה זה עומד</h3>
+    <p>לא רעיון על רגל אחת. מערכת שעומדת על כמה עמודים, כל אחד נשען על השני:</p>
+    <ul>
+      <li>צבירת ידע: כל קצה נלכד ונשמר, בלי שיילך לאיבוד.</li>
+      <li>ניהול ידע: מבנה ויקי מקושר ששומר על מאגר אמת נקי.</li>
+      <li>עבודה: סוכן AI מתוחכם שמבצע את העבודה הסדרתית.</li>
+      <li>למידה מתוך העבודה: המכונה משתפרת בכל סבב, לא רק מבצעת.</li>
+      <li>עצמאות הנתונים: מאגר האמת נשאר בבעלות המשתמש, ומתחבר לכל כלי או מודל שנדרש, בלי נעילה לספק.</li>
+    </ul>
+    <p class="muted">כל עמוד לבדו קיים בשוק. החיבור ביניהם, על קרקע של ניהול פרויקטים, הוא המערכת.</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="harvest">קציר</span>
+      <span class="chip hx" data-node="vaults">דרגות חשיפה</span>
+      <span class="chip hx" data-node="learning">המכונה לומדת</span>
+      <span class="chip hx" data-node="machine">המכונה</span>
+    </div></div>
+  </article>
+
+  <article id="n-boundary" data-title="הגבול: האדריכל / קלוד">
+    <h3>הגבול: מה האדריכל, מה קלוד</h3>
+    <div class="cols2">
+      <div class="col-card me"><div class="ch">האדריכל</div><ul>
+        <li>הארכיטקטורה והחזון</li><li>השיפוט וההחלטות</li><li>ידע התחום וההקשר</li><li>הגדרת מה נכון</li><li>הניווט בין מגוון רחב של מקרים</li><li>בקרת איכות וסדר עדיפויות</li>
+      </ul></div>
+      <div class="col-card cl"><div class="ch">קלוד</div><ul>
+        <li>הביצוע הסדרתי</li><li>הקוד והניסוח</li><li>החיפוש והאיסוף</li><li>שיגור סוכנים וסיירים, וחיבור לכל כלי שנדרש</li><li>הריצה-העצמית והתיעוד</li><li>העבודה החוזרת</li>
+      </ul></div>
+    </div>
+    <p class="muted">חשיבה רשתית, תלת-מימדית ופרקטלית, בניגוד ללינארית ואוקלידית; המערכת עושה את הסדרתי. מוקדם בעקומת ה-AI, על בסיס ידע קיים.</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="orchestrator">מנצח</span>
+      <span class="chip hx" data-node="slope">השיפוע</span>
+    </div></div>
+  </article>
+
+  <article id="n-orchestrator" data-title="מנצח">
+    <h3>מנצח</h3>
+    <p>מי שמתכנן ומנהל מערכת של כלים וסוכנים, מגדיר מה נכון, מה הסדר, מה רמת האיכות, בלי לכתוב את הקוד בעצמו. כמו מנהל פרויקט שמנצח על צוות יועצים, לא משרטט בעצמו כל קו.</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="edge">מערכת = פרויקט</span>
+      <span class="chip hx" data-node="boundary">הגבול</span>
+    </div></div>
+  </article>
+
+  <article id="n-slope" data-title="השיפוע">
+    <h3>השיפוע</h3>
+    <p>שיפוע תלול: בסיס של 39 שנות ניהול וביצוע מתורגם מהר ל-AI. בתוך חודשים ספורים נבנו ארכיטקטורת מערכת, מאגרי ידע, לולאות לכידה ומיון, ויישומים בפרודקשן עם סגירת מעגלים יומית.</p>
+    <p class="muted">העיקרון: ניסיון ניהולי עמוק מקצר את העקומה. חזק בחשיבה מערכתית, מתחזק בסגירת לולאות מקצה-לקצה.</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="machine">המכונה</span>
+    </div></div>
+  </article>
+
+  <article id="n-commercial" data-title="הכיוון">
+    <h3>הכיוון</h3>
+    <p>מעבר למערכת האישית יש שיטה: דרך-עבודה עם AI על קרקע של 39 שנות ביצוע. ממנה נגזרים <span class="hx" data-node="deployment-gap">פער הפריסה</span> ו<span class="hx" data-node="rare-combo">הצירוף</span>.</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="deployment-gap">פער הפריסה</span>
+      <span class="chip hx" data-node="rare-combo">הצירוף</span>
+      <span class="chip hx" data-node="harvest">קציר</span>
+      <span class="chip hx" data-node="pillars">על מה זה עומד</span>
+    </div></div>
+  </article>
+
+  <article id="n-deployment-gap" data-title="פער הפריסה">
+    <h3>פער הפריסה</h3>
+    <p>ארגונים קונים כלי AI מהר מהקצב שבו הם מטמיעים אותם בפועל. הפער הזה הוא המקום שבו ניהול פרויקט פוגש AI.</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="commercial">הכיוון</span>
+    </div></div>
+  </article>
+
+  <article id="n-rare-combo" data-title="הצירוף">
+    <h3>הצירוף</h3>
+    <p>39 שנות ביצוע בבנייה ונדל"ן, לצד שיטת AI שנבנתה ביד ראשונה. צירוף שלא נפוץ: ניהול פרויקטים מנוסה שפוגש את <span class="hx" data-node="deployment-gap">פער הפריסה</span> מהצד הנכון.</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="buildings">הפרויקטים</span>
+      <span class="chip hx" data-node="commercial">הכיוון</span>
+    </div></div>
+  </article>
+
+  <article id="n-harvest" data-title="קציר">
+    <h3>שיטת הקציר</h3>
+    <p>איסוף ידע משיחות בלי שיילך לאיבוד ובלי שיזהם את מאגר האמת: איסוף מבודד &larr; סקירת אדם &larr; קידום. צינור לעיבוד ידע, המאפשר הקשר חוצה-זרימות-עבודה כמעט בזמן אמת (תלוי משאבים, חומרה ועלות).</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="vaults">דרגות חשיפה</span>
+      <span class="chip hx" data-node="machine">המכונה</span>
+    </div></div>
+  </article>
+
+  <article id="n-safety" data-title="בטיחות כמאיץ">
+    <h3>בטיחות היא מאיץ</h3>
+    <p>כשכל פעולה הפיכה (יומן + גיבוי), יש ביטחון לפעול מהר. עיקרון עבודה עם AI שאפשר ללמד ולהעביר הלאה.</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="telemetry">תיעוד-עצמי</span>
+    </div></div>
+  </article>
+
+  <article id="n-ask" data-title="הבקשה">
+    <h3>מה פתוח</h3>
+    <p>לא בקשה אחת אלא דלת פתוחה. כל צורת מעורבות טובה, והבחירה שלך:</p>
+    <ul>
+      <li>חיבורים והיכרויות, לאנשים הנכונים.</li>
+      <li>חונכות וכיול, מבט של מי שכבר היה שם.</li>
+      <li>השתתפות הדדית: חלק בארגון כאן, או חלק בארגון שם.</li>
+      <li>המלצה, דלת שנפתחת.</li>
+      <li>כל פורמט: עמית, יועץ, שותף.</li>
+    </ul>
+    <p class="muted">כרגע זה לא על השולחן. הקשר עצמו הוא הערך, והפרטים קיימים למי שירצה להעמיק בהמשך.</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="commercial">הכיוון</span>
+    </div></div>
+  </article>
+
+  <article id="n-story" data-title="הסיפור">
+    <h3>הסיפור: הצורך להמציא מחדש</h3>
+    <p>התחלתי מסקרנות. המון תחומים מושכים אותי בו-זמנית, וניסיתי לחקור אותם בשיחות עם AI. אבל זה לא הספיק, ולא הצלחתי לחבר ביניהם ולהחזיק את הקשרים.</p>
+    <p>ניסיתי לעבוד בתוך פרויקטים מסודרים, ועדיין היה חסר הרבה. זה לא באמת בנה, לא סינתז ולא חיבר. כל הזמן נתקע.</p>
+    <p>ואז הגעתי לקלוד קוד. זה היה מפחיד. ניסיתי שוב להריץ את המחקרים והרעיונות שלי, ושוב, אתגר הרמוניית זרימת המידע ושימורו חסם חתירה סדורה למטרה.</p>
+    <p>אבל האסימון נפל. אלה נקודות הכשל, ואת אלה צריך לארגן. והתחלתי לבנות מערכת שתארגן, תזכור ותתקשר בשקיפות את העבודה.</p>
+    <p>וכאן ההיפוך. ככל שבניתי, העבודה המקורית נדחקה הצידה, והמערכת עצמה הפכה לעיקר של החודשיים האחרונים. בניתי מערכת כדי שאוכל סוף-סוף לחזור למה שמעניין אותי.</p>
+    <p>אבל בינתיים המערכת עצמה נעשתה בעלת ערך. וכך נולד חוט עבודה חדש לגמרי: לקדם את המערכת. זה הסיפור.</p>
+    <p class="muted">וכל זה קורה תוך כדי שאני מנסה להמציא את עצמי מחדש. המכונה צמודה לסיפור הזה, היא נולדה ממנו, ולכן יודעת להתאים את עצמה.</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="machine">המכונה</span>
+      <span class="chip hx" data-node="slope">השיפוע</span>
+      <span class="chip hx" data-node="learning">המכונה לומדת</span>
+    </div></div>
+  </article>
+
+  <article id="n-scale" data-title="אותו עיקרון, בגדול">
+    <h3>אותו עיקרון, בגדול</h3>
+    <p>אותה מכונה, בעלים אחר. אדם מזין את דרכו. חברה מזינה את הקוד-התנהגות, הפרוטוקולים והערכים שלה, והמכונה מתכופפת אליהם, כל עוד יש דרך קוהרנטית להתכופף אליה.</p>
+    <p>וזו השאלה הכנה: מה שעובד לאדם אחד, האם הוא מתרחב לקבוצה. לאדם יש דרך אחת קוהרנטית, לקבוצה יש הרבה. זו לא הצעה, זו השאלה.</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="deployment-gap">פער הפריסה</span>
+      <span class="chip hx" data-node="machine">המכונה</span>
+    </div></div>
+  </article>
+
+  <article id="n-more-apps" data-title="ועוד יישומים">
+    <h3>ועוד, מאותו עולם</h3>
+    <p>הרשימה לא נעצרת. עוד כלים ויישומים שכבר נבנו או מסומנים לבנייה, כל אחד פותר צורך אמיתי ויומיומי:</p>
+    <ul>
+      <li>בריף בוקר אוטומטי, נשלט-משתמש, המאפשר דריל-דאון וקידום העבודה גם בנייד.</li>
+      <li>ממשק משתמש מרוכז: ניטור, תקלות, עקומת למידה, קצות חוט, שאלות, מיון, התייעלות, מעקב והנחיה.</li>
+      <li>מסך לכידה וחיפוש כלים ייעודיים, שיחות ופרויקטים בתקשורת.</li>
+      <li>כלי השוואת הצעות, מסירת פרויקט, קציר מידע ממסמכים בעברית, בניית צוותים, חיפוש מיון ובחירת בעלי מקצוע / מתכננים ויועצים, מערכת לזיהוי תיוג ומיון חפצים מצילום, ועוד.</li>
+    </ul>
+    <p class="muted">כל שורה כאן ראש-חוט לצומת עתידי. מסומן, לא מוצף.</p>
+    <div class="related"><p class="t-overline rl">קשור</p><div class="chips">
+      <span class="chip hx" data-node="machine">המכונה</span>
+    </div></div>
+  </article>
+
+  <article id="n-contact" data-title="צור קשר">
+    <h3>צור קשר</h3>
+    <p>אסף שליט</p>
+    <p class="muted">אדריכל ומנהל פרויקטים &middot; עלמא ניהול פרויקטים</p>
+    <p>מייל: <a class="ext" href="mailto:assaf@almapm.com">assaf@almapm.com</a></p>
+    <p>טלפון: <a class="ext" href="tel:+972526243401">052-624-3401</a></p>
+  </article>
+
+</div>
+
+<script>
+(function(){
+  var qs=new URLSearchParams(location.search);
+  var NOTES=qs.has('notes')||qs.has('beta');
+  var PAGE=!qs.has('panel'); if(PAGE){ try{ document.documentElement.classList.add('mode-page'); }catch(e){} }
+  var stack=[], titles={};
+  var panel=document.getElementById('wpanel'), body=document.getElementById('wbody'),
+      crumbs=document.getElementById('wcrumbs'), scrim=document.getElementById('wscrim');
+
+  /* ---- notes storage ---- */
+  function nk(k){ return 'mcb:'+k; }
+  function getNote(k){ try{ return localStorage.getItem(nk(k))||''; }catch(e){ return ''; } }
+  function setNote(k,v){ try{ if(v&&v.trim()) localStorage.setItem(nk(k),v); else localStorage.removeItem(nk(k)); }catch(e){} }
+  function makeNoteUI(k,title){
+    titles[k]=title;
+    var val=getNote(k);
+    var wrap=document.createElement('div'); wrap.className='note-ui';
+    var tog=document.createElement('button'); tog.type='button'; tog.className='note-toggle'+(val?' has':''); tog.innerHTML=val?'הערה &#10003;':'הערה';
+    var box=document.createElement('div'); box.className='note-box';
+    var ta=document.createElement('textarea'); ta.value=val; ta.placeholder='הקלד או הכתב (Win+H). נשמר אוטומטית, החלון גדל עם הטקסט.';
+    function grow(){ ta.style.height='auto'; ta.style.height=Math.min(ta.scrollHeight+2, Math.round(window.innerHeight*0.6))+'px'; }
+    var row=document.createElement('div'); row.className='note-row';
+    var mic=document.createElement('button'); mic.type='button'; mic.className='note-mic'; mic.title='הכתבה קולית'; mic.textContent='🎙';
+    var hint=document.createElement('span'); hint.className='note-hint'; hint.textContent='נשמר אוטומטית';
+    row.appendChild(mic); row.appendChild(hint); box.appendChild(ta); box.appendChild(row);
+    wrap.appendChild(tog); wrap.appendChild(box);
+    tog.addEventListener('click',function(){ box.classList.toggle('open'); if(box.classList.contains('open')){ ta.focus(); grow(); } });
+    ta.addEventListener('input',function(){ setNote(k,ta.value); var has=!!ta.value.trim(); tog.classList.toggle('has',has); tog.innerHTML=has?'הערה &#10003;':'הערה'; grow(); });
+    var SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+    if(SR){
+      var rec=new SR(); rec.lang='he-IL'; rec.interimResults=false; rec.continuous=true;
+      var recOn=false;
+      mic.addEventListener('click',function(){
+        if(recOn){ recOn=false; mic.classList.remove('rec'); try{rec.stop();}catch(e){} }
+        else { recOn=true; mic.classList.add('rec'); try{rec.start();}catch(e){} }
+      });
+      rec.onresult=function(e){ var t=''; for(var i=e.resultIndex;i<e.results.length;i++){ if(e.results[i].isFinal) t+=e.results[i][0].transcript; } if(t){ ta.value=(ta.value?ta.value+' ':'')+t.trim(); ta.dispatchEvent(new Event('input')); } };
+      rec.onend=function(){ if(recOn){ setTimeout(function(){ if(recOn){ try{rec.start();}catch(e){} } }, 350); } else { mic.classList.remove('rec'); } };
+      rec.onerror=function(e){ if(e&&e.error==='no-speech') return; recOn=false; mic.classList.remove('rec'); };
+    } else { mic.style.display='none'; }
+    return wrap;
+  }
+
+  /* ---- wiki ---- */
+  function getN(id){ return document.getElementById('n-'+id); }
+  function render(){
+    var id=stack[stack.length-1], n=getN(id); if(!n) return;
+    body.innerHTML=n.innerHTML; body.scrollTop=0;
+    crumbs.innerHTML='<button class="whome">&#8617; חזרה הביתה</button><span class="wsep">&rsaquo;</span>'+stack.map(function(s,i){ return '<button class="wcrumb" data-i="'+i+'">'+getN(s).getAttribute('data-title')+'</button>'; }).join('<span class="wsep">&rsaquo;</span>');
+    if(NOTES){
+      var ntitle=getN(id).getAttribute('data-title');
+      var blocks=body.querySelectorAll(':scope > p, :scope > ul, :scope > table, :scope > .cols2, :scope > .tl, :scope > .gallery');
+      blocks.forEach(function(el,bi){
+        if(el.closest('.related')) return;
+        var snip=(el.textContent||'').trim().replace(/\s+/g,' ').slice(0,40);
+        var bui=makeNoteUI('node:'+id+'::'+bi, ntitle+' › '+(snip||('בלוק '+(bi+1))));
+        bui.classList.add('per-block');
+        el.insertAdjacentElement('afterend', bui);
+      });
+      var ui=makeNoteUI('node:'+id, ntitle+' (כל הצומת)'); ui.classList.add('in-panel'); body.appendChild(ui);
+    }
+  }
+  function openP(){ panel.classList.add('open'); scrim.classList.add('show'); panel.setAttribute('aria-hidden','false'); document.body.classList.add('panel-open'); }
+  function closeP(){ panel.classList.remove('open'); scrim.classList.remove('show'); panel.setAttribute('aria-hidden','true'); document.body.classList.remove('panel-open'); stack=[]; }
+  function push(id){ if(!getN(id)) return; stack.push(id); openP(); render(); }
+
+  document.addEventListener('click',function(e){
+    var hx=e.target.closest('.hx');
+    if(hx&&hx.getAttribute('data-node')){ e.preventDefault(); push(hx.getAttribute('data-node')); return; }
+    if(e.target.closest('.whome')){ closeP(); return; }
+    var cr=e.target.closest('.wcrumb');
+    if(cr){ stack=stack.slice(0,parseInt(cr.getAttribute('data-i'),10)+1); render(); return; }
+    if(e.target.closest('#wclose')||e.target===scrim){ closeP(); }
+  });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'){ closeP(); var d=document.getElementById('notesDrawer'); if(d) d.classList.remove('open'); } });
+
+  /* ---- notes collection ---- */
+  function prettyTitle(k){
+    if(titles[k]) return titles[k];
+    if(k.indexOf('node:')===0){
+      var rest=k.slice(5), parts=rest.split('::'), nn=getN(parts[0]);
+      var base=nn?nn.getAttribute('data-title'):parts[0];
+      return parts.length>1 ? base+' › בלוק '+(parseInt(parts[1],10)+1) : base+' (כל הצומת)';
+    }
+    return k;
+  }
+  function collect(){
+    var out=[];
+    try{ for(var i=0;i<localStorage.length;i++){ var key=localStorage.key(i); if(key&&key.indexOf('mcb:')===0){ var v=localStorage.getItem(key); if(v&&v.trim()){ var k=key.slice(4); out.push({k:k,title:prettyTitle(k),text:v}); } } } }catch(e){}
+    return out;
+  }
+  if(NOTES){
+    document.querySelectorAll('.annot').forEach(function(el){ el.insertAdjacentElement('afterend', makeNoteUI(el.getAttribute('data-k'), el.getAttribute('data-title')||'בלוק')); });
+    var fab=document.getElementById('notesFab'), drawer=document.getElementById('notesDrawer'), sheet=document.getElementById('notesSheet');
+    fab.style.display='block';
+    function dl(name,text){ var b=new Blob([text],{type:'text/markdown;charset=utf-8'}); var u=URL.createObjectURL(b); var a=document.createElement('a'); a.href=u; a.download=name; document.body.appendChild(a); a.click(); setTimeout(function(){ document.body.removeChild(a); URL.revokeObjectURL(u); },1000); }
+    function stamp(){ var d=new Date(),p=function(n){return(n<10?'0':'')+n;}; return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate())+'-'+p(d.getHours())+p(d.getMinutes()); }
+    function exportNotes(){ var items=collect(); if(!items.length) return false; var s=stamp(); var md='# הערות - כרטיס ביקור מאסטר-קלאס\n# נשמר: '+s+' · '+items.length+' הערות\n\n'+items.map(function(it){return '## '+it.title+'\n'+it.text;}).join('\n\n')+'\n'; dl('masterclass-remarks-'+s+'.md',md); if(navigator.clipboard){ try{navigator.clipboard.writeText(md);}catch(e){} } return true; }
+    var sendFab=document.createElement('button'); sendFab.className='send-fab'; sendFab.id='sendFab'; sendFab.textContent='✓ סיימתי · שמור ושלח'; document.body.appendChild(sendFab);
+    sendFab.addEventListener('click',function(){ if(exportNotes()){ collect().forEach(function(it){ try{localStorage.removeItem('mcb:'+it.k);}catch(e){} }); document.querySelectorAll('.note-toggle.has').forEach(function(t){ t.classList.remove('has'); t.innerHTML='הערה'; }); document.querySelectorAll('.note-box textarea').forEach(function(t){ t.value=''; }); if(typeof renderDrawer==='function'){ renderDrawer(); } sendFab.textContent='נשמר ונוקה ✓'; } else { sendFab.textContent='אין הערות עדיין'; } setTimeout(function(){ sendFab.textContent='✓ סיימתי · שמור ושלח'; },2500); });
+    function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+    function renderDrawer(){
+      var items=collect(); fab.textContent='הערות ('+items.length+')';
+      var h='<div class="ns-top"><h3>ההערות שלך</h3><button class="wclose" id="nsClose">&times;</button></div>';
+      if(!items.length) h+='<p class="muted">עוד אין הערות. פתח "הערה" בכל בלוק או צומת.</p>';
+      items.forEach(function(it){ h+='<div class="ns-item"><div class="ns-t">'+esc(it.title)+'</div><div class="ns-x">'+esc(it.text)+'</div></div>'; });
+      if(items.length) h+='<div class="ns-actions"><button class="alma-cta" id="nsCopy">העתק הכל</button><button class="ns-clear" id="nsClear">נקה הכל</button></div>';
+      sheet.innerHTML=h;
+    }
+    fab.addEventListener('click',function(){ renderDrawer(); drawer.classList.add('open'); });
+    drawer.addEventListener('click',function(e){
+      if(e.target===drawer||e.target.closest('#nsClose')){ drawer.classList.remove('open'); return; }
+      if(e.target.closest('#nsCopy')){ var t=collect().map(function(it){ return '### '+it.title+'\n'+it.text; }).join('\n\n'); if(navigator.clipboard) navigator.clipboard.writeText(t); var b=e.target.closest('#nsCopy'); b.textContent='הועתק ✓'; return; }
+      if(e.target.closest('#nsClear')){ if(confirm('למחוק את כל ההערות?')){ collect().forEach(function(it){ try{localStorage.removeItem('mcb:'+it.k);}catch(e){} }); renderDrawer(); document.querySelectorAll('.note-toggle.has').forEach(function(t){ t.classList.remove('has'); t.innerHTML='הערה'; }); document.querySelectorAll('.note-box textarea').forEach(function(t){ t.value=''; }); } return; }
+    });
+  }
+})();
+</script>
+</body>
+</html>
